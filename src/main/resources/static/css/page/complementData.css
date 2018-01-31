@@ -134,13 +134,13 @@
     transition: all .5s;
     border-radius: 4px;
     display: inline-block;
-    border: 1px solid #01A358;
-    background: #01A358;
+    border: 1px solid #00399C;
+    background: #00399C;
 }
 .submit-btn:active, .submit-btn:focus{
     color: white;
-    border: 1px solid #01A358;
-    background: #01A358;
+    border: 1px solid #00399C;
+    background: #00399C;
 }
 
 .add-linkmanContacts-btn{

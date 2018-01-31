@@ -13,9 +13,9 @@
     height: 250px;
     box-sizing: border-box;
     background: #20AE6C;
-    background: url("../../img/bg.png") no-repeat;
+    background: url("../../img/23.png") no-repeat;
     background-size: cover;
-    background-position: bottom;
+    background-position: top;
     border-radius: 10px 10px 0 0;
     padding: 50px 20px;
 }

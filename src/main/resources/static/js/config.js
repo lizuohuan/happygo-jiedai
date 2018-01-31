@@ -7,7 +7,7 @@ var shadeTimeOut = null, shadeTimeOut1 = null; //用于遮罩
 config.prototype = {
 	/**是否开启测试模式**/
 	isDebug : false,
-	ip: 'http://' + window.location.host + '/weijd/',
+	ip: 'http://' + window.location.host + '/jiedai/',
 	//ip: 'http://192.168.31.205/weijd/',
 	ipUrl: location.href.split('#')[0],
 	/**手机号码正则表达式**/
@@ -749,7 +749,7 @@ if (!config.isDebug) {
 	var useragent = navigator.userAgent;
 	if (useragent.match(/MicroMessenger/i) != 'MicroMessenger') {
 		// 这里警告框会阻塞当前页面继续加载
-		alert('已禁止本次访问：您必须使用微信内置浏览器访问本页面！');
+		//alert('已禁止本次访问：您必须使用微信内置浏览器访问本页面！');
 		$("body").html("<div class='warning'>已禁止本次访问：<br>您必须使用微信内置浏览器访问本页面！<div/>");
 	}
 	else { }

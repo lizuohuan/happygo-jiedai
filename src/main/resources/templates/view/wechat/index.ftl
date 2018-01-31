@@ -14,53 +14,65 @@
 <body>
 <div id="app">
     <div class="app-content">
-        <div class="my-head">
-            <div class="bg">
-                <div class="bg-blur user-avatar"></div>
-            </div>
-            <div class="user-detail">
-                <div class="user-head-img user-avatar"></div>
+        <div class="user-bg">
+            <div class="user-bar">
+                <div class="border">
+                    <div class="user-head"></div>
+                </div>
                 <div class="user-name" v-if="userInfo.idCard == null || userInfo.idCard == ''">暂未实名</div>
                 <div class="user-name" v-if="userInfo.idCard != null && userInfo.idCard != ''">{{userInfo.userName}}</div>
-                <div class="user-integral">
+                <div class="user-credit">
                     <i></i>
                     <span>{{userInfo.creditPoints == null ? 0 : userInfo.creditPoints}}</span>
                 </div>
                 <div class="user-phone">{{userInfo.phone}}</div>
             </div>
-            <div class="user-info">
-                <div>
+        </div>
+
+        <div class="state-bar">
+            <div class="row">
+                <div class="item item-1">
                     <i></i>
                     <span class="hint">待还</span>
-                    <span class="number">{{userInfo.nowToBePaidJoinPrice == null ? 0 : userInfo.nowToBePaidJoinPrice}}</span>
+                    <span class="money">{{userInfo.nowToBePaidJoinPrice == null ? 0 : userInfo.nowToBePaidJoinPrice}}</span>
                 </div>
-                <div>
+                <div class="item">
                     <i></i>
                     <span class="hint">待收</span>
-                    <span class="number">{{userInfo.nowToBePaidOutPrice == null ? 0 : userInfo.nowToBePaidOutPrice}}</span>
+                    <span class="money">{{userInfo.nowToBePaidOutPrice == null ? 0 : userInfo.nowToBePaidOutPrice}}</span>
                 </div>
             </div>
         </div>
 
-        <div class="user-menu">
-            <ul class="app-list-menu">
-                <li><a @click="setUrl('myBorrow', 1)"><i></i><span>待还</span></a></li>
-                <li><a @click="setUrl('findCredit', 1)"><i></i><span>查信用</span></a></li>
-                <li><a @click="setUrl('myBorrowOut', 1)"><i></i><span>待收</span></a></li>
-                <li><a @click="setUrl('setting', 0)"><i></i><span>设置</span></a></li>
-                <li><a @click="setUrl('feedback', 0)"><i></i><span style="color: red;;">举报</span></a></li>
-            </ul>
+        <div class="menu-bar">
+            <div class="menu-row">
+                <div class="menu-item" @click="setUrl('loanApplication?type=1', 1)">
+                    <div class="menu-icon"></div>
+                    <div class="menu-name">求借款</div>
+                </div>
+                <div class="menu-item" @click="setUrl('loanApplication?type=0', 1)">
+                    <div class="menu-icon"></div>
+                    <div class="menu-name">去出借</div>
+                </div>
+                <div class="menu-item" @click="setUrl('myBorrow', 1)">
+                    <div class="menu-icon"></div>
+                    <div class="menu-name">待还</div>
+                </div>
+                <div class="menu-item" @click="setUrl('findCredit', 1)">
+                    <div class="menu-icon"></div>
+                    <div class="menu-name">查信用</div>
+                </div>
+                <div class="menu-item" @click="setUrl('myBorrowOut', 1)">
+                    <div class="menu-icon"></div>
+                    <div class="menu-name">待收</div>
+                </div>
+                <div class="menu-item" @click="setUrl('setting', 0)">
+                    <div class="menu-icon"></div>
+                    <div class="menu-name">设置</div>
+                </div>
+            </div>
         </div>
 
-    </div>
-
-    <div class="fix-buttons">
-        <div class="fix-left">
-            <button @click="setUrl('loanApplication?type=1', 1)"><i></i><span>求借款</span></button>
-        </div>
-        <div class="fix-right">
-            <button @click="setUrl('loanApplication?type=0', 1)"><i></i><span>去出借</span></button>
-        </div>
     </div>
 </div>
 </body>
