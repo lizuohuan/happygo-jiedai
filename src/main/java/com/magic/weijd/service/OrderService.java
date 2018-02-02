@@ -62,7 +62,7 @@ public class OrderService {
         String msg = "";
         String number = order1.getNumber();
         String statusMsg = "还款提醒";
-        String lastMsg = "欢迎使用易信缘";
+        String lastMsg = "欢迎使用欢喜财富";
         String openId = "";
         //出借人
         User fu;
@@ -162,7 +162,7 @@ public class OrderService {
                         statusMsg = "申请借款被拒";
                         order.setFromUserId(userId);
                     }
-                    lastMsg = "欢迎再次使用易信缘";
+                    lastMsg = "欢迎再次使用欢喜财富";
                     WxTemplateSend.sendTemplateOrderStatus(msg,number,statusMsg,lastMsg,openId,order1.getId());
                 } else {
                     throw new InterfaceCommonException(StatusConstant.ORDER_STATUS_ABNORMITY,"状态异常");
@@ -212,7 +212,7 @@ public class OrderService {
                     if (order1.getStatus().equals(7)) {
                         // TODO: 2017/9/12  如果为上一个状态为7 申请延期还款 此地方推送 同意申请延期还款
                         msg = "出借人"+fu.getUserName()+"已通过您的延期申请";
-                        lastMsg = "欢迎您使用易信缘！";
+                        lastMsg = "欢迎您使用欢喜财富！";
                         WxTemplateSend.sendTemplateOrderApplyPassFor(msg,number,tu.getUserName(),lastMsg,tu.getOpenId(),order1.getId());
                         //同意延期 把申请的延期时间 设置为待还款时间
                         order.setRepaymentTime(order1.getPostponeRepaymentTime());
@@ -238,7 +238,7 @@ public class OrderService {
                 String name = "借款人申请还款";
                 String userName = tu.getUserName();
                 String type = "申请还款";
-                lastMsg = "欢迎使用易信缘";
+                lastMsg = "欢迎使用欢喜财富";
                 WxTemplateSend.sendTemplateOrderRepayApplyFor(msg,name,userName,type,lastMsg,fu.getOpenId(),order1.getId());
                 break;
             case 5 :
@@ -254,7 +254,7 @@ public class OrderService {
                     msg = "您的还款被出借人"+fu.getUserName()+"确认";
                     statusMsg = "确认还款提醒";
                 }
-                lastMsg = "欢迎再次使用易信缘";
+                lastMsg = "欢迎再次使用欢喜财富";
                 WxTemplateSend.sendTemplateOrderStatus(msg,number,statusMsg,lastMsg,openId,order1.getId());
                 if (null == order.getTrueRepaymentTime()) {
                     order.setTrueRepaymentTime(new Date());
@@ -317,7 +317,7 @@ public class OrderService {
                 name = "借款人申请延期";
                 userName = tu.getUserName();
                 type = "申请延期";
-                lastMsg = "欢迎使用易信缘";
+                lastMsg = "欢迎使用欢喜财富";
                 WxTemplateSend.sendTemplateOrderDelayApplyFor(msg,name,userName,type,lastMsg,fu.getOpenId(),order1.getId());
                 break;
             default:

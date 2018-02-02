@@ -15,7 +15,7 @@ public class JuHeUtil {
     //聚合 请求地址
     private static final String url = "http://op.juhe.cn/idcard/query";
 
-    private static final String key = "52da40cd0bdfdf29fa19b12228ba7ea2";
+    private static final String key = "b2cba2611192b6507f1c3df35cef7925";
 
 
     private static final String send_url = url+"?key=" + key;

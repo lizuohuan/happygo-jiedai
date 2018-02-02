@@ -6,9 +6,9 @@
 spring:
   datasource:
     name: weijd
-    url: jdbc:mysql://192.168.31.110:3306/jiedai?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true
+    url: jdbc:mysql://localhost:3306/jiedai?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true
     username: root
-    password: 123
+    password: Magic2016
     driver-class-name: com.mysql.jdbc.Driver
   freemarker:
     allow-request-override: false

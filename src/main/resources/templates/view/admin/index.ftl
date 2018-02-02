@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>易信缘后台管理系统</title>
+    <title>欢喜财富后台管理系统</title>
     <!--引入抽取css文件-->
     <#include "../admin/public-css.ftl">
     <link rel="stylesheet" href="${request.contextPath}/admin/css/global.css" media="all">

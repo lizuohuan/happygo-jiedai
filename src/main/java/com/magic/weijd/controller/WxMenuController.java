@@ -85,8 +85,8 @@ public class WxMenuController extends BaseController {
         String myUrl = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + WeChatConfig.my_http;
         //联系我们url
         String contactUsUrl = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + WeChatConfig.contact_us_http;
-        //意见反馈url
-        String feedbackUrl = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + WeChatConfig.feedback_http;
+//        //意见反馈url
+//        String feedbackUrl = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + WeChatConfig.feedback_http;
 //        if (request.getLocalPort()==80) {
 //            myUrl = request.getLocalAddr() + WeChatConfig.my_http;
 //            contactUsUrl = request.getLocalAddr() + WeChatConfig.contact_us_http;
@@ -113,27 +113,35 @@ public class WxMenuController extends BaseController {
                 }
                 {   //联系我们
                     JSONObject jsonObject = new JSONObject();
+                    jsonObject.put("type","view");
                     jsonObject.put("name","联系我们");
-                    List<JSONObject> subList = new ArrayList<>();
-                    {
-                        //联系我们
-                        JSONObject subObj = new JSONObject();
-                        subObj.put("type","view");
-                        subObj.put("name","联系我们");
-                        subObj.put("url",contactUsUrl);
-                        subList.add(subObj);
-                    }
-                    {
-                        //意见反馈
-                        JSONObject subObj = new JSONObject();
-                        subObj.put("type","view");
-                        subObj.put("name","意见反馈");
-                        subObj.put("url",feedbackUrl);
-                        subList.add(subObj);
-                    }
-                    jsonObject.put("sub_button",subList);
+                    jsonObject.put("key","V1002_US");
+                    jsonObject.put("url",contactUsUrl);
                     list.add(jsonObject);
                 }
+//                {   //联系我们
+//                    JSONObject jsonObject = new JSONObject();
+//                    jsonObject.put("name","联系我们");
+//                    List<JSONObject> subList = new ArrayList<>();
+//                    {
+//                        //联系我们
+//                        JSONObject subObj = new JSONObject();
+//                        subObj.put("type","view");
+//                        subObj.put("name","联系我们");
+//                        subObj.put("url",contactUsUrl);
+//                        subList.add(subObj);
+//                    }
+//                    {
+//                        //意见反馈
+//                        JSONObject subObj = new JSONObject();
+//                        subObj.put("type","view");
+//                        subObj.put("name","意见反馈");
+//                        subObj.put("url",feedbackUrl);
+//                        subList.add(subObj);
+//                    }
+//                    jsonObject.put("sub_button",subList);
+//                    list.add(jsonObject);
+//                }
                 menuJson.put("button",list);
             }
             //匹配规则

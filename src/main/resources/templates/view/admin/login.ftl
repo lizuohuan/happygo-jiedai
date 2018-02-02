@@ -3,7 +3,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>易信缘后台登录</title>
+    <title>欢喜财富后台登录</title>
     <!--引入抽取css文件-->
     <#include "../admin/public-css.ftl">
     <link rel="stylesheet" type="text/css" href="${request.contextPath}/admin/css/login.css" media="all">
@@ -12,8 +12,8 @@
 <div class="layui-canvs"></div>
 <div class="layui-layout layui-layout-login">
     <h1>
-        <strong>易信缘后台管理系统</strong>
-        <em>YXY SYSTEM</em>
+        <strong>欢喜财富后台管理系统</strong>
+        <em>HXCF SYSTEM</em>
     </h1>
     <div class="layui-user-icon larry-login">
         <input type="text" placeholder="账号" class="login_txtbx" id="account"/>

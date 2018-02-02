@@ -12,11 +12,11 @@ public class WeChatConfig {
 
     public static final String TICKET= "weijd_ticket";
 
-    public static String appId = "wx7ab31ae0dfa5178e"; //正式
-
-    public static String secret = "d057f55db377d8e7a8f1c8620ba18a82";
-
-    public static String mchId = "1494236412";
+//    public static String appId = "wxf82e7f586da7084b"; //正式
+//
+//    public static String secret = "68ee3ea93534118e90a1306e749c3ebf";
+//
+//    public static String mchId = "1494236412";
 
 
     public static final String SIGN_URL = "https://api.mch.weixin.qq.com/pay/unifiedorder";
@@ -24,11 +24,11 @@ public class WeChatConfig {
     public static final String payKey = "3e6677cfca6644fab81494b360243cfd";
 
 
-//    public static String appId = "wx8d7693a361f74b8d"; //李
-//
-//    public static String secret = "69caf329e1eed8ef1b3e7066eabc0f89";
-//
-//    public static String mchId = "1494236412";
+    public static String appId = "wx8d7693a361f74b8d"; //李
+
+    public static String secret = "69caf329e1eed8ef1b3e7066eabc0f89";
+
+    public static String mchId = "1494236412";
 
 //    public static String appId = "wx6c852451915d2149"; //2李
 //
@@ -44,17 +44,17 @@ public class WeChatConfig {
     public static String order_info_http = "/wechat/page/borrowingDetail/";
 
     /** 我的主页 */
-    public static String my_http = "/weijd/wechat/page/index";
+    public static String my_http = "/jiedai/wechat/page/index";
 
     /** 意见反馈 */
-    public static String feedback_http = "/weijd/wechat/page/feedback";
+    public static String feedback_http = "/jiedai/wechat/page/feedback";
 
     /** 联系我们 */
-    public static String contact_us_http = "/weijd/wechat/page/contactUs";
+    public static String contact_us_http = "/jiedai/wechat/page/contactUs";
 
     /** 订单状态更新 */
-//    public static String template_order_status = "tJlA5Zvo5N-IencN_8qe0ET9qnsC5NyO1bejzKk6GDM";
-    public static String template_order_status = "RkXXGbc6bZCpGyHQXkdW7jusSDIGqUXdvZJAPiuQUV8";
+    public static String template_order_status = "tJlA5Zvo5N-IencN_8qe0ET9qnsC5NyO1bejzKk6GDM";
+//    public static String template_order_status = "RkXXGbc6bZCpGyHQXkdW7jusSDIGqUXdvZJAPiuQUV8";
 
     /** 延期申请通知 */
 //    public static String template_order_apply = "pSg4Qc5WomJSi3wyhX4Hv5d544mVIuAQuHIHrh7tGTo";
@@ -66,8 +66,8 @@ public class WeChatConfig {
 
 
     /** 申请结果 */
-//    public static String template_order_apply_result = "r9JHuggcqUXyLs8dcYt2tsXGVPsMvzPHb3tBxTgrNtA";
-    public static String template_order_apply_result = "Ka9Eb4VRoubUjwZZSMWx994sj_V_Vy2Fjky5wMCoi_g";
+    public static String template_order_apply_result = "r9JHuggcqUXyLs8dcYt2tsXGVPsMvzPHb3tBxTgrNtA";
+//    public static String template_order_apply_result = "Ka9Eb4VRoubUjwZZSMWx994sj_V_Vy2Fjky5wMCoi_g";
 
     /** 申请通过提醒 */
     public static String template_order_apply_pass_result = "xRkKmjb6PGMYyZi6VUwH1Fxk80SMAYOEwkdrXOlihpU";
