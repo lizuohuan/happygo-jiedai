@@ -18,7 +18,7 @@
     <input value="${orderId}" id="orderId" type="hidden">
     <div class="top">
         <div class="circle"></div>
-        <span>易信缘-借款单</span>
+        <span>欢喜财富-借款单</span>
         <a ng-click="findUserCredit()">查看平台信用<span>&gt;</span></a>
     </div>
     <div class="borrowing-detail">
@@ -180,7 +180,7 @@
         });
 
         //微信好友
-        var shareTitle = "我在易信缘发起一个借款邀请，快来审批吧！";
+        var shareTitle = "我在欢喜财富发起一个借款邀请，快来审批吧！";
         var shareImg = "http://www.cdxinqu.cn/weijd/img/icon.png";
         var desc = "金额：" + $("#hintPrice").val() + ",时长：" + $("#hintTime").val() + ",年化利率：" + $("#hintInterestRate").val() + "%";
         var link = location.href;

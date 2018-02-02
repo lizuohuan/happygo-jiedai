@@ -25,9 +25,9 @@
         <p>乙方（借款人）：{{orderInfo.toUserName}}　联系电话：{{orderInfo.toUserPhone}}</p>
         <p>身份证号：{{orderInfo.toUserIdCard}}</p>
         <br>
-        <p>丙方（服务商）：成都鑫区网络科技有限公司（“易信缘”平台运营商）客服电话：{{contactUsInfo.phone}}</p>
+        <p>丙方（服务商）：成都朴素科技有限公司（“欢喜财富”平台运营商）客服电话：{{contactUsInfo.phone}}</p>
         <br>
-        <p class="text-indent">甲乙双方均系丙方“易信缘”平台已注册的实名用户，同意并自愿遵守丙方提供的《用户注册协议》及其他平台操作准则，现基于平等、自愿、诚信的原则，就借贷相关事宜达成如下约定：</p>
+        <p class="text-indent">甲乙双方均系丙方“欢喜财富”平台已注册的实名用户，同意并自愿遵守丙方提供的《用户注册协议》及其他平台操作准则，现基于平等、自愿、诚信的原则，就借贷相关事宜达成如下约定：</p>
         <p class="text-indent">一、借款内容</p>
         <br>
         <table border="1" cellspacing="0">
@@ -94,14 +94,14 @@
         <br>
         <p class="text-indent">七、其他</p>
         <br>
-        <p class="text-indent">丙方作为网络借贷信息中介服务商，见证甲乙双方本次借款协议的签订，但无法保证甲乙双方的实际履约能力，也依法不对本协议线下的支付、催收提供任何承诺和服务。本借款协议留存于易信缘平台，甲乙双方可按照用户《用户注册协议》进行相应操作。</p>
+        <p class="text-indent">丙方作为网络借贷信息中介服务商，见证甲乙双方本次借款协议的签订，但无法保证甲乙双方的实际履约能力，也依法不对本协议线下的支付、催收提供任何承诺和服务。本借款协议留存于欢喜财富平台，甲乙双方可按照用户《用户注册协议》进行相应操作。</p>
         <p>甲方：{{orderInfo.fromUserName}}</p>
         <p>{{orderInfo.createTimeHanZi}}</p>
         <br>
         <p>乙方：{{orderInfo.toUserName}}</p>
         <p>{{orderInfo.repaymentTimeHanZi}}</p>
         <br>
-        <p>服务商：成都鑫区网络科技有限公司</p>
+        <p>服务商：成都朴素科技有限公司</p>
         <p>{{orderInfo.createTimeHanZi}}</p>
         <img src="${request.contextPath}/img/16.png" width="100px" style="position: relative;top: -50px;">
         <br>
