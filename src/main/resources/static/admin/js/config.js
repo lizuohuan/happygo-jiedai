@@ -1,7 +1,7 @@
 var AM = function () {};
 AM.prototype = {
-	ip: 'http://'+window.location.host+'/weijd/admin',
-	ipImg: 'http://'+window.location.host+'/weijd/',
+	ip: 'http://'+window.location.host+'/jiedai/admin',
+	ipImg: 'http://'+window.location.host+'/jiedai/',
 	ipUrl: location.href.split('#')[0],
 	//手机号码正则表达式
 	isMobile : /^(((13[0-9]{1})|(18[0-9]{1})|(17[6-9]{1})|(15[0-9]{1}))+\d{8})$/,
