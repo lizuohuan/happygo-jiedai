@@ -12,11 +12,11 @@ public class WeChatConfig {
 
     public static final String TICKET= "weijd_ticket";
 
-//    public static String appId = "wxf82e7f586da7084b"; //正式
-//
-//    public static String secret = "68ee3ea93534118e90a1306e749c3ebf";
-//
-//    public static String mchId = "1494236412";
+    public static String appId = "wxf82e7f586da7084b"; //正式
+
+    public static String secret = "68ee3ea93534118e90a1306e749c3ebf";
+
+    public static String mchId = "1494236412";
 
 
     public static final String SIGN_URL = "https://api.mch.weixin.qq.com/pay/unifiedorder";
@@ -24,11 +24,11 @@ public class WeChatConfig {
     public static final String payKey = "3e6677cfca6644fab81494b360243cfd";
 
 
-    public static String appId = "wx8d7693a361f74b8d"; //李
-
-    public static String secret = "69caf329e1eed8ef1b3e7066eabc0f89";
-
-    public static String mchId = "1494236412";
+//    public static String appId = "wx8d7693a361f74b8d"; //李
+//
+//    public static String secret = "69caf329e1eed8ef1b3e7066eabc0f89";
+//
+//    public static String mchId = "1494236412";
 
 //    public static String appId = "wx6c852451915d2149"; //2李
 //
@@ -52,25 +52,20 @@ public class WeChatConfig {
     /** 联系我们 */
     public static String contact_us_http = "/jiedai/wechat/page/contactUs";
 
-    /** 订单状态更新 */
-    public static String template_order_status = "tJlA5Zvo5N-IencN_8qe0ET9qnsC5NyO1bejzKk6GDM";
-//    public static String template_order_status = "RkXXGbc6bZCpGyHQXkdW7jusSDIGqUXdvZJAPiuQUV8";
+    /** 微订单状态提醒 */
+    public static String template_order_status = "t2c0mfhH9KHaFpTLw-4ykHl_BPC4WQFNP4MGLsUWjIM";
 
     /** 延期申请通知 */
-//    public static String template_order_apply = "pSg4Qc5WomJSi3wyhX4Hv5d544mVIuAQuHIHrh7tGTo";
-    public static String template_order_delay_apply = "ukOqQfDvVLMEWJVsDASOS59_jZGTruvV5Wns75UptCw";
+    public static String template_order_delay_apply = "trvAlwBDDnmHYSfYJVCzg5rTMoyjjoneCZ8wP2cAw6U";
 
     /** 还款申请通知 */
-    public static String template_order_repay_apply = "ul0bEpdcHldoL1_EibOMoy3tirqnlPxmU71iCpqGRHI";
+    public static String template_order_repay_apply = "8D8FofQHdhUgdEesOkwoRpt6PNDttbFHBLoP53PmWDI";
 
-
-
-    /** 申请结果 */
-    public static String template_order_apply_result = "r9JHuggcqUXyLs8dcYt2tsXGVPsMvzPHb3tBxTgrNtA";
-//    public static String template_order_apply_result = "Ka9Eb4VRoubUjwZZSMWx994sj_V_Vy2Fjky5wMCoi_g";
+    /** 审核结果通知 */
+    public static String template_order_apply_result = "ZA02mnqSqoeGS9QBhg2_79Cx-Z1vEUG5KUSxeJv1mpw";
 
     /** 申请通过提醒 */
-    public static String template_order_apply_pass_result = "xRkKmjb6PGMYyZi6VUwH1Fxk80SMAYOEwkdrXOlihpU";
+    public static String template_order_apply_pass_result = "owJH1I04raHjc7uOTLBHFw_36xF58YCOBFD492wxsP4";
 
 
     /** 创建微信公众号首页菜单的url */
